@@ -5,34 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sarath</title>
 <style>
-  body { font-family: Georgia, serif; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #fafaf7; color: #2c2c2c; line-height: 1.5; }
+  * { box-sizing: border-box; }
+  body { font-family: Georgia, serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #fafaf7; color: #2c2c2c; line-height: 1.6; }
   .header { display: flex; align-items: flex-start; gap: 30px; }
-  .profile-pic { width: 200px; border-radius: 6px; border: 3px solid #1b4332; flex-shrink: 0; }
-  .header-text { flex: 1; }
+  .profile-pic { width: 200px; max-width: 100%; height: auto; border-radius: 6px; border: 3px solid #1b4332; flex-shrink: 0; }
+  .header-text { flex: 1; min-width: 0; }
+  .tagline { font-size: 1.1em; color: #1b4332; border-left: 4px solid #1b4332; padding-left: 12px; margin: 10px 0 20px; }
   h2 { margin-top: 40px; color: #1b4332; border-bottom: 2px solid #1b4332; padding-bottom: 4px; }
   h3 { margin-top: 20px; color: #1b4332; }
   ul, ol { padding-left: 20px; }
   li { margin-bottom: 10px; }
-  a { color: #2d6a4f; text-decoration: none; }
+  a { color: #2d6a4f; text-decoration: none; word-break: break-word; }
   a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    body { margin: 20px auto; }
+    .header { flex-direction: column; align-items: center; text-align: center; }
+    .profile-pic { width: 150px; }
+  }
 </style>
 </head>
 <body>
-
 <div class="header">
   <img src="Sarath_Chandra_Photo.jpeg" alt="Sarath" class="profile-pic">
   <div class="header-text">
     <p><strong>Mudigonda Sarath Chandra</strong></p>
-    <p>
-      I am a PhD candidate in Economics at the Paris School of Economics (PSE), supervised by
-      <a href="https://heleneollivier.github.io"> Professor Hélène Ollivier</a>. I am currently an Eiffel Excellence Doctoral Researcher.
+    <p class="tagline">
+      PhD Candidate in Economics, Paris School of Economics — Climate Risk, Trade &amp; Industrial Development
     </p>
     <p>
-      My research focuses on climate risk, trade and industrial development in developing economies.
+      I am supervised by <a href="https://heleneollivier.github.io">Professor Hélène Ollivier</a> and
+      currently an Eiffel Excellence Doctoral Researcher.
     </p>
     <p>
-      Prior to my Doctoral studies, I received my Bachelor of Science in Economics from Shiv Nadar University, with a semester abroad at the University of Bologna and a 
-      MRes in Economics from the Paris School of Economics. I also worked as a Research Consultant at the Economics Department of the OECD from 2023-2024. 
+      I hold a BSc in Economics from Shiv Nadar University (with a semester at the University of Bologna) and an
+      MRes in Economics from PSE, and worked as a Research Consultant at the OECD Economics Department (2023–2024).
       You can find my CV <a href="Mudigonda_Sarath_Chandra_CVA.pdf">here</a>.
     </p>
     <p>
@@ -41,7 +48,6 @@
     </p>
   </div>
 </div>
-
 <h2>News</h2>
   <ol>
     <li> I am happy to announce that I will visit <a href="https://allanhsiao.com"> Professor Allan Hsiao</a> at Stanford University as a <strong>France-Stanford Center Visiting Student Research Fellow</strong> from January 2027.</li> 
@@ -63,6 +69,5 @@
 <p>
 Outside of research, I'm a Manchester United supporter, play ultimate frisbee and squash during my free time. I also enjoy cooking Indian food.
 </p>
-
 </body>
 </html>
