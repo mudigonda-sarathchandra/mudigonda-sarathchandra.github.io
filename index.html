@@ -15,8 +15,16 @@
   .sidebar { position: sticky; top: 40px; width: 220px; flex-shrink: 0; text-align: center; }
   .profile-pic { width: 200px; max-width: 100%; height: auto; border-radius: 6px; border: 3px solid #1b4332; }
   .sidebar-name { margin-top: 14px; font-weight: bold; }
-  .sidebar-contact { margin-top: 10px; font-size: 0.95em; }
-  .sidebar-contact a { display: block; margin-top: 4px; }
+  .sidebar-designation { margin-top: 4px; font-size: 0.9em; color: #1b4332; }
+
+  .sidebar-nav { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
+  .sidebar-nav a { display: block; padding: 6px 10px; border: 1px solid #1b4332; border-radius: 4px; color: #1b4332; font-size: 0.9em; text-decoration: none; }
+  .sidebar-nav a:hover { background: #1b4332; color: #fff; }
+
+  .sidebar-contact { margin-top: 20px; font-size: 0.9em; }
+  .sidebar-contact a { display: block; margin-top: 8px; word-break: break-word; }
+  .cv-button { display: block; margin-top: 14px; padding: 10px 16px; background: #1b4332; color: #fff !important; border-radius: 6px; font-weight: bold; font-size: 1em; text-decoration: none !important; }
+  .cv-button:hover { background: #14351f; }
 
   .content { flex: 1; min-width: 0; }
   .tagline { font-size: 1.1em; color: #1b4332; border-left: 4px solid #1b4332; padding-left: 12px; margin: 0 0 20px; }
@@ -35,6 +43,81 @@
 </head>
 <body>
 
+<div class="layout">
+  <div class="sidebar">
+    <img src="Sarath_Chandra_Photo.jpeg" alt="Sarath" class="profile-pic">
+    <p class="sidebar-name">Mudigonda Sarath Chandra</p>
+    <p class="sidebar-designation">PhD Candidate, Paris School of Economics</p>
+
+    <div class="sidebar-nav">
+      <a href="#about">About Me</a>
+      <a href="#news">News</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+    </div>
+
+    <div class="sidebar-contact">
+      <a href="mailto:sarathchandra.mudigonda@psemail.eu">sarathchandra.mudigonda@psemail.eu</a>
+      <a href="https://www.linkedin.com/in/sarathchandram">LinkedIn</a>
+      <a href="Mudigonda_Sarath_Chandra___CV-6.pdf" class="cv-button">Download CV</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="tagline">
+        Research interests: Climate Risk, Trade and Industrial Development
+      </p>
+      <p>
+        I am supervised by <a href="https://heleneollivier.github.io">Professor Hélène Ollivier</a> and
+        am currently an Eiffel Excellence Doctoral Scholar.
+      </p>
+      <p>
+        I hold a BSc in Economics from Shiv Nadar University (with a semester at the University of Bologna) and an
+        MRes in Economics from PSE. Prior to my doctoral studies, I worked at the Structural Policy and Research Division at the OECD Economics Department (2023–2024).
+      </p>
+      <p>
+        Outside of research, I enjoy bouldering and playing ultimate frisbee. If you're ever in Paris, feel
+        free to join our pickup frisbee games through the
+        <a href="https://www.facebook.com/groups/goodvibesparis/">Good Vibes Paris</a> group, or drop me a line
+        if you'd like to catch a Manchester United match together.
+      </p>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ol>
+        <li> I am happy to announce that I will visit <a href="https://allanhsiao.com"> Professor Allan Hsiao</a> at Stanford University as a <strong>France-Stanford Center Visiting Student Research Fellow</strong> from January 2027.</li> 
+      </ol>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <h3>Work in Progress</h3>
+      <ol>
+        <li><strong>Zoning Risk: Industrial Policy, Land Conversion, and Flood Exposure</strong></li>
+        <li><strong>Better Roads or Stronger Rivals? Relative Access and the Uneven Gains from Infrastructure</strong> (with <a href="https://sites.google.com/site/francoisfontn/"> François Fontaine</a> and <a href="https://samirandutta.github.io">Samiran Dutta</a>)</li> 
+        <li><strong>Production Networks, Multi-Sourcing and Flood Propagation: Theory and Evidence from Firm-to-Firm Transactions</strong> (with <a href="https://heleneollivier.github.io"> Hélène Ollivier</a>,<a href="https://sites.google.com/site/geoffreybarrows/"> Geoffrey Barrows</a>, and <a href="https://sites.google.com/view/tusharknandi/home?authuser=0"> Tushar K. Nandi</a>)</li>
+      </ol>
+      <h3>Working Papers</h3>
+      <ol>
+        <li><strong>The heat is on: Heat stress, productivity, and adaptation among firms</strong> (with <a href="https://sites.google.com/site/heliacostasilva/"> Hélia Costa</a>, <a href="https://sites.google.com/view/guido-franco/home?authuser=0">Guido Franco</a>, <a href="https://cepr.org/about/people/filiz-unsal"> Filiz Unsal</a>, and <a href="https://www.mpaulacaldas.com/about">Maria Paula Caldas</a>) 
+        - <a href="https://www.oecd.org/en/publications/the-heat-is-on-heat-stress-productivity-and-adaptation-among-firms_19d94638-en.html">OECD Working Paper No. 1828</a></li>
+      </ol>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p>
+        Applied Econometrics - École Normale Supérieure - Fall 2025, Fall 2026
+      </p>
+    </section>
+  </div>
+</div>
+
+</body>
+</html>
 <div class="layout">
   <div class="sidebar">
     <img src="Sarath_Chandra_Photo.jpeg" alt="Sarath" class="profile-pic">
