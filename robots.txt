@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mudigonda-sarathchandra.github.io/sitemap.xml
